@@ -4,10 +4,10 @@ import random
 
 pg.init()
 
-crash_sound = pg.mixer.Sound("Crash_Sounds.wav")
-pg.mixer.music.load("Pagani_zonda.wav")
+crash_sound = pg.mixer.Sound("Crash_Sounds.wav")    #crash sound
+pg.mixer.music.load("Pagani_zonda.wav")         
 
-display_width = 800
+display_width = 800     # Main window hight width
 display_height = 600
 
 car_width = 70
@@ -24,7 +24,7 @@ gameDisplay = pg.display.set_mode((display_width,display_height))
 pg.display.set_caption("car race")
 clock = pg.time.Clock()
 
-carImg = pg.image.load('car.png')
+carImg = pg.image.load('car.png')       #loading car image
 pause = False
 
 def car(x,y):
